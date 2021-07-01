@@ -24,11 +24,6 @@ void setup()
 
   display.clearDisplay();
   display.display(); // cause the display to be updated
-  /*
-  display.setTextSize(1);
-  display.setTextColor(WHITE);
-  display.setCursor(0, 0);
-  */
 }
 
 void loop()
