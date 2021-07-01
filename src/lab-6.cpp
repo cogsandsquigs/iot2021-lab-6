@@ -34,7 +34,6 @@ void setup()
 void loop()
 {
   // this chunk inits display for this loop
-
   display.loop();
   display.clearDisplay();
   display.setTextSize(1);
@@ -46,7 +45,7 @@ void loop()
   double tempC = (voltage - 0.5) * 100;      // gets celcius temp from voltage
   double tempF = (tempC * 9.0 / 5.0) + 32.0; // gets fahrenheit temp from celcius
 
-  //display.println("C: " + String(tempC) + " F: " + String(tempF));
+  // this chunk prints the temperature out in a ✨pretty✨ format
   display.println("TEMPERATURE");
   display.setCursor(0, 8);
   display.println("Celsius: " + String(tempC));
